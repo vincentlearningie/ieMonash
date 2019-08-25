@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Basic Bootstrap Website</title>
+    <style>
+    *{
+        /* border:1px solid; */
+    }
+    header.jumbotron{
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn9XmxKhaxko6QibfjBJ2TYXLuoytmGkm4uo7Z8ifL3GCVgnuH);
+        background-size: cover;
+        background-position: center center;
+        padding:170px;
+        color:#fff;
+    }
+    section{
+        padding:80px 0;
+        text-align: center;
+    }
+    .section-heading{
+        font-size: 36px;
+        margin-top: 10px;
+    }
+
+    .section-subheading{
+        font-size: 16px;
+    }
+    .col-sea{
+        padding:50px;
+    }
+    .col-sea img{
+        width: 200px;
+        height:200px;
+        border-radius: 50%;
+    }
+
+    section.story{
+        background:#eee;
+    }
+
+    p.content{
+        padding:30px;
+    }
+
+    .icon-sea{
+        width:80px;
+    }
+
+    p.h2{
+    margin-top:20px;
+    }
+
+
+    section.picture{
+        padding:0;
+    }
+
+    section.picture .col-md-6{
+        padding:150px;
+        color:white;
+        
+    }
+
+    section.picture .col-md-6 p{
+        opacity: .6;
+    }
+
+    section.picture .col-md-6:hover p{
+        opacity: .7;
+    }
+
+    
+
+    .pic2{
+        
+        background-size: cover;
+    }
+
+    section.picture .col-md-6:before{
+        content:"";
+        display: block;
+        width:100%;
+        height:100%;
+        position:absolute;
+        top:0;
+        left:0;
+        transition: .5s;
+        z-index: -1;
+    }
+
+    section.picture .pic1:before{
+        
+        background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzxpFI6invNc00WBKrFmo9xn_vieUO06uOebQQTgAZoGJR6krtew);
+        background-size: 120% auto;
+    }
+
+    section.picture .pic2:before{
+        background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhOP46wvoTmKNVOzozUIA4X_oPWHF6lswv74yBcpwk-svFS_Dqfg);
+        background-size: 120% auto;
+    }
+
+    section.picture .col-md-6:hover{
+        
+    }
+    section.picture .col-md-6:hover:before{
+        filter:brightness(.5);
+    }
+
+
+
+
+/* debug */
+/* 
+section,header{
+    display: none;
+}
+
+section.picture{
+    display: block;
+} */
+    </style>
+</head>
+<body>
+    <header class="jumbotron">
+        <div class="container text-center">
+                <h3>Sea City</h3>
+                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+        </div>
+    </header>
+
+    <section class="intro text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="section-heading">Amazing Sea city</h2>
+                    <h3 class="section-subheading text-muted">PlaceHolder text PlaceHolder text PlaceHolder text </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sea">
+                    <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/193/193370977.jpg" alt="">
+                    <h4>Place Holder Text</h4>
+                    <h6 class="text-muted">SubHeading </h6>
+                </div>
+                <div class="col-md-4 col-sea">
+                    <img class="" src="https://t-ec.bstatic.com/images/hotel/max1024x768/193/193370977.jpg" alt="">
+                    <h4>Place Holder Text</h4>
+                    <h6 class="text-muted">SubHeading </h6>
+                </div>
+                <div class="col-md-4 col-sea">
+                    <img class="" src="https://t-ec.bstatic.com/images/hotel/max1024x768/193/193370977.jpg" alt="">
+                    <h4>Place Holder Text</h4>
+                    <h6 class="text-muted">SubHeading </h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="story text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <img class="icon-sea" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXUxzgglWGMgy_dYVZffQt_0LbTqesraO-_SDMtrDQPNAIAq40mg" alt="">
+                    <h2 class="section-heading">Sea Sea Sea</h2>
+                    <h3 class="section-subheading text-muted">Place Holder Text</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="h2">Place Holder Title</p>
+                    <p class="content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque perferendis in repellendus aliquam beatae necessitatibus quaerat nihil cum velit eos.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                        <p class="h2">Place Holder Title</p>
+                        <p class="content">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque perferendis in repellendus aliquam beatae necessitatibus quaerat nihil cum velit eos.
+                            </p>
+                </div>
+                    
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="picture">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 pic1">
+                    <div class="text-panel">
+                        <h1>Sea Animals</h1>
+                        <p>Place Holder Text</p>
+                    </div>
+                </div>
+                <div class="col-md-6 pic2">
+                    <div class="text-panel">
+                        <h1>Sea Animals</h1>
+                        <p>Place Holder Text</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

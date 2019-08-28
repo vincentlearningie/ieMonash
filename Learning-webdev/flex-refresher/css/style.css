@@ -27,7 +27,17 @@ body,html{
     font-family: 'Lato','Courier New', Courier, monospace;
     color:#707070;
     margin:0;
+    background-color:pink;
+    width:100vw;
+    height:100vh;
+    max-width: 90%;
+
 }
+
+
+
+
+
 .container{
     max-width: 980px;
     margin:0 auto;
@@ -81,4 +91,22 @@ p{
     padding:.5em;
     background-color:#312614;
     color:#fff;
+}
+
+
+@media (min-width:600px) {
+
+    body,html{
+        background-color:orange;
+    }
+    .columns{
+        flex-direction: column;
+    }
+
+    
+    .col,
+    .col-2,
+    .col-3{
+        width:100%;
+    }
 }

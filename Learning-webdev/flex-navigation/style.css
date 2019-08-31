@@ -10,11 +10,12 @@ Colors:
     padding:0;
     box-sizing: border-box;
 } */
-body{
+html,body{
     margin:0;
     font-family: 'Ubuntu',sans-serif;
     font-size: 1.125rem;
     font-weight: 300;
+    min-height: 100%;
 }
 
 img{
@@ -22,7 +23,19 @@ img{
     display: block;
 }
 
+.current-page{
+    border-bottom: 1px solid #707070;
+}
 
+.current-page:hover{
+    color:#707070;
+}
+.image-full{
+    max-height: 300px;
+    width:100%;
+    object-fit: cover;
+    margin-bottom: 1em;
+}
 /* Typography */
 h1,
 h2,
@@ -35,6 +48,10 @@ h3{
 h1{
     margin:0;
     font-size: 2rem;
+}
+
+h3{
+    color:#1792d2;
 }
 
 a{
@@ -60,8 +77,8 @@ strong{
     font-size: 1.5rem;
 }
 
-.article-read-more,
-.article-info{
+.article-read-more
+{
     font-size: .875rem;
 }
 
@@ -75,6 +92,11 @@ strong{
 .article-read-more:focus{
     color:#143774;
     text-decoration: underline;
+}
+
+.widget-title,
+.widget-recent-post-title{
+    font-size: 1rem;
 }
 
 
@@ -116,6 +138,8 @@ header{
 
     aside{
         width:20%;
+        min-width: 200px;
+        margin-left: 1em;
     }
 }
 
@@ -267,11 +291,30 @@ nav a:focus{
     flex-direction: column;
 }
 .sidebar-widget{
-    border:10px solid #707070;
+    border:10px solid #efefef;
+    margin-bottom: 2em;
     padding:1em;
-
 }
-.sidebar-widget:first-of-type{
-    margin-bottom:2em;
-    
+
+.widget-recent-post{
+    display: flex;
+    flex-direction: column;
+    border-bottom:1px solid #707070;
+    margin-bottom: 1em;
+}
+
+.widget-recent-post:last-child{
+    border:none;
+    margin:0;
+}
+
+.widget-image{
+    order:-1;
+}
+
+footer{
+    background:#143774;
+    color:white;
+    text-align: center;
+    padding:3em;
 }

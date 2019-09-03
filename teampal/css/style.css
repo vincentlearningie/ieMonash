@@ -2,7 +2,7 @@ body {
   font-size: .675rem;
   line-height: 1.6;
   margin: 0;
-  overflow: hidden; }
+  overflow-x: hidden; }
 
 .container {
   width: 90%;

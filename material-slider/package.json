@@ -1,0 +1,17 @@
+{
+  "name": "material-slider",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass":"node-sass all.scss main.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@material/slider": "^3.1.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
